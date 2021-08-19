@@ -25,5 +25,3 @@ All kinds of contributions are very welcome and appreciated!
 
 -   ⭐️ Star the project
 -   🐛 Find and report issues
-
-And make sure to read the [Contributing Guide](/CONTRIBUTION.md) before making a pull request.
