@@ -10,6 +10,9 @@
     <img src="https://i.imgur.com/y7E1NbW_d.webp?maxwidth=760&fidelity=grand" alt="Dashboard">
 </p>
 
+**Demo**
+https://dashboard-frontend-delta.vercel.app/dashboard
+
 ## :zap: **Tech Stack**
 -   [Angular](https://github.com/angular)
 -   [Angular Material](https://material.angular.io/)
