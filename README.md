@@ -1,32 +1,29 @@
-# Challenge Bten Frontend
+<p align="center">
+  <a href="https://ant.design">
+    <img width="200" src="./.github/logo.svg">
+  </a>
+</p>
+<h1 align="center">Dashboard Kit</h1>
+<p align="center">A minimal, clean and beautiful dashboard dasktop to help people administer world's trends.</p>
 
-## Instruções
+<p align="center"> 
+    <img src="https://i.imgur.com/y7E1NbW_d.webp?maxwidth=760&fidelity=grand" alt="Dashboard">
+</p>
 
-Criar um site web utilizando angular 11, com os seguintes requisitos:
+## :zap: **Tech Stack**
+-   [Angular](https://github.com/angular)
+-   [Angular Material](https://material.angular.io/)
+-   [Mocky.io](https://designer.mocky.io/)
+-   [Ngx-Charts](https://swimlane.github.io/ngx-charts/#/ngx-charts/bar-vertical)
+-   [Google Icons](https://fonts.google.com/icons)
 
-- Tela de Login
-- Tela de Cadastro (opção caso o usuário não tenha login)
-- Tela de Dashboard com gráficos em tela logada (dados mockados)
+## :handshake: **Contributing**
 
-## Exemplo de tela logada
-Modelo de Dashboard a ser seguido
+This project is for study purposes too, so send me an email telling me what you are doing and why you are doing it, teach me what you know
 
+All kinds of contributions are very welcome and appreciated!
 
-![alt text](https://res.cloudinary.com/hew4hghip/image/upload/v1619198749/geral/Challenge_bten_front.png)
+-   ⭐️ Star the project
+-   🐛 Find and report issues
 
-## Iniciando Client:
-
-```sh
-cd client
-yarn
-ng serve
-```
-
-## Entrega:
-
-- Criar um repositório público no github ou bitbucket com esse código e nos enviar o link
-
-## Extras (opcional): 
-- Telas responsivas
-- Testes unitários
-- Hospedar em servidor gratuito (Heroku por exemplo)
+And make sure to read the [Contributing Guide](/CONTRIBUTION.md) before making a pull request.
