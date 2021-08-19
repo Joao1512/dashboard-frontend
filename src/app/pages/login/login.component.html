@@ -1,0 +1,43 @@
+<div class="container">
+    <div class="main-card">
+        <div class="logo">
+            <img src="../../../../assets/images/logo.svg" height="35px" width="35px" alt="LOGO"> 
+            <span class='text-bold'>DashBoard Kit</span>
+        </div>
+        <form [formGroup]="formLogin" class="credencials">
+            <div class="container-email">
+                <mat-form-field class="full-width" appearance="fill">
+                    <mat-label>Email</mat-label>
+                    <input type="email" matInput formControlName="email"
+                           placeholder="Ex. pat@example.com">
+                    <mat-error *ngIf="formLogin.controls['email'].hasError('email')">
+                      Please enter a valid email address
+                    </mat-error>
+                    <mat-error *ngIf="formLogin.controls['email'].hasError('required')">
+                      Email is <strong>required</strong>
+                    </mat-error>
+                  </mat-form-field>
+            </div>
+            <div class="container-password">
+                <mat-form-field class="full-width" appearance="fill">
+                    <mat-label>Password</mat-label>
+                    <input type="password" matInput formControlName="password">
+                    <mat-error *ngIf="formLogin.controls['password'].hasError('required')">
+                      Passoword is <strong>required</strong>
+                    </mat-error>
+                  </mat-form-field>
+            </div>
+            <div class="actions">
+                <div class="signin text-small">
+                    Forgot your password?
+                </div>
+                <div class="signin text-small"  routerLink="/signin">
+                    Create Account
+                </div>
+                <div class="buttonLogin">
+                    <button (click)='save()' mat-flat-button color="primary">LOGIN</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

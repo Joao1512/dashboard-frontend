@@ -1,0 +1,51 @@
+<body>
+  <div class="main-chart">
+      <div class="chart-info">
+        <div class="chart-name text-bold" style="color: black;">
+          {{chartInfo?.name}}
+        </div>
+        <div class="chart-date">
+          <div class="date text-small">
+            {{chartInfo?.date}}
+          </div>
+          <div class="subtitle">
+           <div class="item" *ngFor="let item of multi"  [style.color]='item.color'>{{item.name}}</div>
+          </div>
+        </div>
+      </div>
+      <div class='loading' *ngIf="loadingChart" >
+        <mat-spinner></mat-spinner>
+      </div>
+      <div *ngIf="loadingChart === false"  class="chart">
+        <ngx-charts-area-chart
+        [scheme]="colorScheme"
+        [showXAxisLabel]="showXAxisLabel"
+        [showYAxisLabel]="showYAxisLabel"
+        [xAxis]="xAxis"
+        [yAxis]="yAxis"
+        [timeline]="timeline"
+        [results]="multi"
+        [curve]="curve"
+        [yScaleMax]="7"
+        [gradient]='true'
+        [schemeType] = 'schemeType'
+        [yAxis]='true'
+        [xAxis]='false'
+        [view]='[870,410]'
+        [animations]='true'
+        >
+        </ngx-charts-area-chart> 
+      </div>
+  </div>
+  <div class="chart-concised-data">
+    <div class="item" *ngFor="let item of chartConcisedDataInfo" >
+      <div class="nome text-bold">
+        {{item.name}}
+      </div>
+      <div class="value text-title">
+        {{item.value}}
+      </div>
+    </div>
+  </div>
+
+</body>

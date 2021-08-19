@@ -1,0 +1,16 @@
+
+
+<body>
+    <nav>
+        <app-menu (title)="receberTitulo($event)"></app-menu>
+    </nav>
+    <main>
+        <header>
+            <app-header [titulo]='title' ></app-header>
+        </header>
+        <div>
+            <app-concised-data></app-concised-data>
+            <app-chart></app-chart>
+        </div>
+    </main>
+</body>

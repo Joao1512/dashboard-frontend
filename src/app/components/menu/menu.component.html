@@ -1,0 +1,24 @@
+<body>
+  <div class="container">
+    <div class="logo">
+        <img src="../../../../assets/images/logo.svg" height="35px" width="35px" alt="LOGO"> 
+        <span class='text-bold'>DashBoard Kit</span>
+    </div>
+    <div class="content">
+      <div class="menu-item" *ngFor="let item of menuItems" [routerLink]="['/', item.link]" (click)="emitirTituloPagina(item.nome)" >
+        <span class="material-icons">{{item.icon}}</span>
+        <a>{{item.nome}}</a>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="content">
+      <div class="menu-item" *ngFor="let item of adminItems" [routerLink]="['/', item.link]" (click)="emitirTituloPagina(item.nome)" >
+        <span class="material-icons">{{item.icon}}</span>
+        <a>{{item.nome}}</a>
+      </div>
+    </div>
+
+  </div>
+</body>

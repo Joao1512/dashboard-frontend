@@ -1,0 +1,54 @@
+<div class="container">
+    <div class="main-card">
+        <div class="logo">
+            <img src="../../../../assets/images/logo.svg" height="35px" width="35px" alt="LOGO"> 
+            <span class='text-bold'>DashBoard Kit</span>
+        </div>
+        <form [formGroup]="formSignin" class="credencials">
+
+            <div class="container-name">
+                <mat-form-field class="full-width" appearance="fill">
+                    <mat-label>Name</mat-label>
+                    <input type="text" matInput formControlName="name">
+                    <mat-error *ngIf="formSignin.controls['name'].hasError('required')">
+                      Name is <strong>required</strong>
+                    </mat-error>
+                  </mat-form-field>
+            </div>
+
+            <div class="container-email">
+                <mat-form-field class="full-width" appearance="fill">
+                    <mat-label>Email</mat-label>
+                    <input type="email" matInput formControlName="email"
+                           placeholder="Ex. pat@example.com">
+                    <mat-error *ngIf="formSignin.controls['email'].hasError('email')">
+                      Please enter a valid email address
+                    </mat-error>
+                    <mat-error *ngIf="formSignin.controls['email'].hasError('required')">
+                      Email is <strong>required</strong>
+                    </mat-error>
+                  </mat-form-field>
+            </div>
+
+            <div class="container-password">
+                <mat-form-field class="full-width" appearance="fill">
+                    <mat-label>Password</mat-label>
+                    <input type="password" matInput formControlName="password">
+                    <mat-error *ngIf="formSignin.controls['password'].hasError('required')">
+                      Passoword is <strong>required</strong>
+                    </mat-error>
+                  </mat-form-field>
+            </div>
+            <div class="actions">
+                <div class="buttonLogin">
+                    <button (click)="save()" mat-flat-button color="primary">SIGN UP</button>
+                </div>
+                <div class="separator">or</div>
+                <button class="google"> <img src="../../../assets/images/google-icon.svg" alt=""> Sign Up with Google</button>
+                <div align='center' class="login">
+                    Already have an account? <span class='text-small' style='color: #3853ee;' routerLink='/login' >Log In</span> 
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

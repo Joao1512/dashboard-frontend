@@ -1,0 +1,18 @@
+<div class="content" *ngIf="loading === false" >
+  <div class="card" *ngFor="let item of data" >
+    <div class="text-bold">{{item.name}}</div>
+    <div class="number text-title-bold">{{item.value}}</div>
+  </div>
+</div>
+
+<div class="content" *ngIf="loading === true">
+    <div class="card-skeleton" >
+    </div>
+    <div class="card-skeleton" >
+    </div>
+    <div class="card-skeleton" >
+    </div>
+    <div class="card-skeleton" >
+    </div>
+</div>
+

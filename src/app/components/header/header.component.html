@@ -1,0 +1,19 @@
+<body>
+  <div class="text-title">
+    {{titulo}}
+  </div>
+  <div class="access">
+    <div class="tools">
+      <span class="material-icons">search</span>
+      <span class="material-icons">notifications_active</span>
+    </div>
+    <div class="user">
+      <div class="name text-small" style='font-weight: bold;'>
+        {{user?.name}}
+      </div>
+      <div class="avatar">
+        <img [src]="user?.avatar" height="40px" width="40px" alt="">
+      </div>
+    </div>
+  </div>
+</body>

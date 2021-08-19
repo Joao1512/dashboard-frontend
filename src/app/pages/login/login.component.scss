@@ -1,0 +1,75 @@
+$primary-background: #ffffff;
+$primary-border: 1px solid #b8b9be;
+
+
+.container {
+    width: 100%;
+    padding: 200px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.main-card {
+    margin: 0 auto;
+    background-color: $primary-background;
+    padding: 64px;
+    width: 500px;
+    border-radius: 12px;
+    border: $primary-border;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    
+    form {
+        display: flex;
+        min-width:100%;
+        flex-direction: column;
+
+        .full-width {
+            min-width: 100%
+        }
+
+        > div {
+            margin-top: 12px;
+        }
+    }
+
+    .logo {
+        width: fit-content;
+        margin: 0 auto;
+        padding-bottom: 64px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        
+        span {
+        margin-left: 12px;
+        }
+    }
+}
+
+.actions {
+    
+    .signin {
+        margin-bottom: 8px;
+    }
+
+    .buttonLogin {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+@media screen and (max-width:767px) {
+
+    .container {
+        padding: 100px 0;
+        max-height: 100%;
+    }
+
+    .main-card { 
+        padding-left: 32px;
+        max-width: 250;
+    }
+}

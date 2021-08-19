@@ -1,0 +1,46 @@
+$primary-border: 1px solid #b8b9be;
+body {
+    padding-top: 23px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 25px;
+}
+
+.access {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tools {
+    color: #c4c9d3;
+    border-right: $primary-border;
+
+    > span {
+        margin-right: 16px;
+        
+    }
+
+    > span:last-child {
+        margin-right: 32px;
+    }
+
+    > span:hover{
+        transition: 500ms;
+        cursor: pointer;
+        color: #3853ee;
+    }
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    .name {
+        margin-left: 32px;
+    }
+
+    .avatar {
+        margin-left: 16px;
+    }
+
+}
